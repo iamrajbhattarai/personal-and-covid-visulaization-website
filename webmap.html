@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/fav.png" />
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib" />
+    <!-- Meta Description -->
+    <meta name="description" content="" />
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="" />
+    <!-- meta character set -->
+    <meta charset="UTF-8" />
+    <!-- Site Title -->
+    <title>Web GIS App</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:400,400i,500,700"
+        rel="stylesheet" />
+    <!--
+      CSS
+      =============================================
+    -->
+    <link rel="stylesheet" href="css/linearicons.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/hexagons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.0/css/ol.css" type="text/css">
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.0/build/ol.js"></script>
+
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <!-- <script src="https://unpkg.com/elm-pep"></script> -->
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script
+        src="https://cdn.polyfill.io/v3/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,URL,TextDecoder,Number.isInteger"></script>
+    <!-- naya -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <!-- ================ Start Header Area ================= -->
+    <header class="default-header">
+        <nav class="navbar navbar-expand-lg  navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="lnr lnr-menu"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end align-items-center"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="personalfacts.html">Personal Facts</a></li>
+                        <li><a href="webmap.html">Web GIS App</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ================ End Header Area ================= -->
+
+    <!-- ================ start banner Area ================= -->
+    <section class="banner-area">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-12 banner-right">
+                    <h1 class="text-white">
+                        Web GIS App
+                    </h1>
+                    <p class="mx-auto text-white  mt-20 mb-40">
+                        This page is divided into two parts: the first web report portion regarding WMS, WFS and WCS
+                        and<br />
+                        the second covers Web GIS app.
+                    </p>
+                    <div class="link-nav">
+                        <span class="box">
+                            <a href="index.html">Home </a>
+                            <i class="lnr lnr-arrow-right"></i>
+                            <a href="webmap.html">Web GIS App </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================ End banner Area ================= -->
+    <section class="webreport-area">
+        <div class="containerr">
+            <h1>
+                Web Report<br /><br />
+            </h1>
+            <div class="webreporti-slider owl-carousel" data-slider-id="1">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="item">
+                            <div class="webreporti-item">
+                                <i class="ti-book"></i>
+                                <h4>Web Map Service</h4>
+                                <p>WMS</p>
+                                <div class="mt-40 text">
+                                    <p>
+                                        A Web Map Service (WMS) defines an interface that allows a client to get
+                                        maps of
+                                        geospatial data and gain detailed information on specific features shown on
+                                        the
+                                        map. A "map" is defined here as a visual representation of geospatial data,
+                                        not
+                                        the geospatial data itself.
+                                        A Web Map Service can:
+                                    </p>
+                                    <br>
+                                    <ul class="unordered-list">
+                                        <li>Produce a map – as a picture, as a series of graphical elements, or as a
+                                            packaged set of geographic feature data;</li>
+                                        <li>Answer basic queries about the content of a map; and</li>
+                                        <li>Tell a client what maps it can produce and which of those can be queried
+                                            further.</li>
+                                    </ul>
+                                    <br>
+                                    <p>
+                                        WMS is not intended to provide access to the original unprocessed data.
+                                        A Web Map Service can act as a client by combining a number of images served by
+                                        other WMS servers. It can also accommodate an extension using a Styled Layer
+                                        Descriptor (SLD) and Symbology Encoding (SE), and offers the capability to
+                                        restrict which features are displayed by using a filter as defined by a Filter
+                                        Encoding (FE) specification.
+                                    </p>
+                                </div>
+                                <div class="section-top-border">
+                                    <h4 class="mb-30">Operations that can be done via WMS:</h4>
+                                    <br>
+                                    <div class="progress-table-wrap">
+                                        <div class="progress-table">
+                                            <div class="table-head">
+                                                A WMS interface consists of the following mandatory
+                                                and optional operations:
+                                            </div>
+
+                                            <div class="table-row">
+                                                <div class="serial">
+                                                    <h6>Mandatory:</h6>
+                                                </div>
+                                                <div class="country">
+                                                    <h6>Optional for SLD-enabled WMS:</h6>
+                                                </div>
+
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="serial">
+                                                    <ul class="unordered-list">
+                                                        <li><b>GetCapabilities:</b> returns an XML document describing
+                                                            the
+                                                            service and the data collections from which clients may
+                                                            request maps. </li>
+                                                        <li><b>GetMap:</b> provides a means for a client to request maps
+                                                            of geo-referenced data.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="country">
+                                                    <ul class="unordered-list">
+                                                        <li><b>DescribeLayer:</b> retrieves additional information about
+                                                            the layer.</li>
+                                                        <li><b>GetLegendGraphic:</b> retrieves a generated legend for a
+                                                            map.</li>
+                                                        <li><b>GetStyles: </b> retrieves information about the styles
+                                                            available.</li>
+                                                        <li><b>PutStyles:</b> enables to use the assigned styles for
+                                                            rendering maps.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="serial">
+                                                    <h6>Optional:</h6>
+                                                </div>
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="serial">
+                                                    <ul class="unordered-list">
+                                                        <li><b>GetFeatureInfo: </b> retrieves the underlying data,
+                                                            including geometry and attribute values, for a pixel
+                                                            location on a map.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <p><a href="https://www.nrcan.gc.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/standards-policies/8938#Additional_Information"
+                                        target="_blank">
+                                        Know More
+                                    </a></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offset-lg-0 col-lg-4">
+                        <img src="img/webreport/wms1.png" alt="" />
+                        <img src="img/webreport/wms2.png" alt="" />
+                        <br>
+                        <img src="img/webreport/wms3.png" alt="" />
+                        <br>
+                        <img src="img/webreport/wms4.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="item">
+                            <div class="webreporti-item">
+                                <i class="ti-book"></i>
+                                <h4>Web Feature Service</h4>
+                                <p>WFS</p>
+                                <div class="mt-40 text">
+                                    <p>
+                                        A Web Feature Service (WFS) allows a client to perform data manipulation
+                                        operations on one or more geographic features. Data manipulation operations
+                                        include the following:
+                                    </p>
+                                    <br>
+                                    <ul class="unordered-list">
+                                        <li>Ability to Get or Query features based on spatial and non-spatial
+                                            constraints;</li>
+                                        <li>Create a new feature;</li>
+                                        <li>Modify a feature; or </li>
+                                        <li>Delete a feature.</li>
+                                    </ul>
+                                    <br>
+                                    <p>
+                                        A WFS is primarily a feature access service that also includes elements of a
+                                        feature type service, a coordinate conversion/transformation service and a
+                                        geographic format conversion service. WFS offers direct fine-grained access to
+                                        geographic information at the feature and feature property level. However, Web
+                                        Feature Services does not confer administrative rights over the data to WFS
+                                        clients. Clients can only retrieve or modify the data of the specific feature(s)
+                                        they are seeking; they cannot retrieve the complete file or underlying data
+                                        store containing the feature data.
+                                    </p>
+                                </div>
+                                <div class="section-top-border">
+                                    <h4 class="mb-30">Operations that can be done via WFS:</h4>
+                                    <br>
+                                    <div class="progress-table-wrap">
+                                        <div class="progress-table">
+                                            <div class="table-head">
+                                                A WFS interface consists of the following operations:
+                                            </div>
+
+                                            <div class="table-row">
+                                                <div class="serial">
+                                                    <h6>Operations supported by all versions of WFS:</h6>
+                                                </div>
+                                                <div class="country">
+                                                    <h6>Operations supported by WFS 2.0.0 only:</h6>
+                                                </div>
+
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="serial">
+                                                    <ul class="unordered-list">
+                                                        <li><b>GetCapabilities:</b> generates a metadata document
+                                                            describing a WFS service
+                                                            provided by server as well as valid WFS operations and
+                                                            parameters. </li>
+                                                        <li><b>DescribeFeartureType:</b> returns a description of
+                                                            feature types supported by a WFS service.
+                                                        </li>
+                                                        <li><b>GetFeature:</b>
+                                                            returns a selection of features from a data source including
+                                                            geometry and attribute values. </li>
+                                                        <li><b>LockFeature:</b> prevents a feature from being edited
+                                                            through a persistent feature lock.
+                                                        </li>
+                                                        <li><b>Transaction:</b> edits existing feature types by
+                                                            creating, updating, and deleting.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="country">
+                                                    <ul class="unordered-list">
+                                                        <li><b>GetPropertyValue:</b>
+                                                            retrieves the value of a feature property or part of the
+                                                            value of a complex feature property from the data store for
+                                                            a set of features identified using a query expression.</li>
+                                                        <li><b>GetFeatureWithLock:</b> returns a selection of features
+                                                            and also applies a lock on those features.</li>
+                                                        <li><b>CreateStoredQuery: </b> create a stored query on the WFS
+                                                            server.</li>
+                                                        <li><b>DropStoredQuery:</b> deletes a stored query from the WFS
+                                                            server.</li>
+                                                        <li><b>ListStoredQueries:</b> returns a list of the stored
+                                                            queries on a WFS server.
+                                                        </li>
+                                                        <li><b>DescribeStoredQueries:</b> returns a metadata document
+                                                            describing the stored queries on a WFS server.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <p><a href="https://docs.geoserver.org/master/en/user/services/wfs/reference.html"
+                                        target="_blank">
+                                        Know More
+                                    </a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offset-lg-0 col-lg-4">
+                        <img src="img/webreport/wfs2.png" alt="" />
+                        <br>
+                        <img src="img/webreport/wfs1.png" alt="" />
+                        <br>
+                        <img src="img/webreport/wfs4.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="item">
+                            <div class="webreporti-item">
+                                <i class="ti-book"></i>
+                                <h4>Web Coverage Service</h4>
+                                <p>WCS</p>
+                                <div class="mt-40 text">
+                                    <p>
+                                        A Web Coverage Service (WCS) defines a standard interface and operations that
+                                        enable interoperable access to geospatial coverages consisting of intact, raw
+                                        data. The term "gridded coverages" typically refers to content such as satellite
+                                        images, digital aerial photos, digital elevation data, and other phenomena
+                                        represented by values at each measurement point.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Unlike the Web Map Service (WMS) which returns static maps, the Web Coverage
+                                        Service (WCS) and the Web Coverage Processing Service (WCPS) provide access to
+                                        raw data. Typically client applications will model, analyze and render the data
+                                        returned.
+                                    </p>
+                                    <br>
+                                    <ul class="unordered-list">
+                                        <li>Provides available data together with their detailed descriptions;</li>
+                                        <li>Defines a rich syntax for requests against these data; and</li>
+                                        <li>Returns data with its original semantics (instead of pictures) which may be
+                                            interpreted, extrapolated, etc., and not just portrayed.</li>
+                                    </ul>
+                                    <br>
+                                    <p>
+                                        WCS defines a simple access protocol (subsetting, scaling, reprojection). The
+                                        WCPS complements this by defining a protocol-independent language for the
+                                        extraction, processing, and analysis of multi-dimensional gridded coverages
+                                        representing sensor, image, or statistical data. Services implementing this WCPS
+                                        language provide access to original or derived sets of geospatial coverage
+                                        information in forms that are useful for client-side rendering, input into
+                                        scientific models, and other client applications.
+                                    </p>
+                                </div>
+                                <div class="section-top-border">
+                                    <h4 class="mb-30">Operations that can be done via WCS:</h4>
+                                    <br>
+                                    <div class="progress1-table-wrap">
+                                        <div class="progress1-table">
+                                            <div class="table-head">
+                                                A WCS interface consists of the following operations:
+                                            </div>
+
+                                            <div class="table-row">
+                                                <div class="visit">
+                                                    <h6>Operations supported by all versions of WFS:</h6>
+                                                </div>
+
+                                            </div>
+                                            <div class="table-row">
+                                                <div class="serial">
+                                                    <ul class="unordered-list">
+                                                        <li><b>GetCapabilities:</b> generates a metadata document
+                                                            describing a WFS service
+                                                            provided by server as well as valid WFS operations and
+                                                            parameters. </li>
+                                                        <li><b>DescribeFeartureType:</b> returns a description of
+                                                            feature types supported by a WFS service.
+                                                        </li>
+                                                        <li><b>GetFeature:</b>
+                                                            returns a selection of features from a data source including
+                                                            geometry and attribute values. </li>
+                                                        <li><b>LockFeature:</b> prevents a feature from being edited
+                                                            through a persistent feature lock.
+                                                        </li>
+                                                        <li><b>Transaction:</b> edits existing feature types by
+                                                            creating, updating, and deleting.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <p><a href="https://www.nrcan.gc.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/web-map-tile-service-wmts/web-coverage-service-wcs/8932"
+                                        target="_blank">
+                                        Know More
+                                    </a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offset-lg-0 col-lg-4">
+                        <img src="img/webreport/wcs1.png" alt="" />
+                        <br>
+                        <img src="img/webreport/wcs2.png" alt="" />
+                        <br>
+                        <img src="img/webreport/wcs3.png" alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--================ End Web Report Area =================-->
+
+    <!--=================Start of Web GIS App ======================-->
+    <section class="webgis-area">
+        <div class="containerr">
+            <h1>
+                Web GIS Application<br /><br />
+            </h1>
+            <div class="row align-items">
+                <div class="col-lg-9">
+                    <h2 id="title">OSM BASEMAP</h2>
+                </div>
+                <img id="north" src="img/north1.png" alt="">
+            </div>
+            <br>
+            <div class="row align-items">
+                <div class="col-lg-2">
+                    <div class="legend">
+                        <div class="layertree" id="layertree">
+                            <h4>Table of Contents</h4>
+                            <ul>
+                                <li><span>
+                                        <h6>Base Layers</h6>
+                                    </span>
+                                    <fieldset id="layer0">
+                                        <label class="checkbox" for="visible0">
+                                            <input id="visible0" class="visible" type="checkbox" checked
+                                                legend="osm" />&nbsp&nbsp
+                                            OSM
+                                            Layer
+                                        </label>
+                                    </fieldset>
+                                    <fieldset id="layer1">
+                                        <label class="checkbox" for="visible1">
+                                            <input id="visible1" class="visible" type="checkbox"
+                                                legend="bing" />&nbsp&nbsp Bing
+                                            Satellite Layer
+                                        </label>
+                                    </fieldset>
+                                </li>
+                                <br>
+                                <li><span>
+                                        <h6>Overlays</h6>
+                                    </span>
+                                    <fieldset>
+                                        <ul>
+                                            <li><span>
+                                                    <h6 class="theme">Administrative Layers</h6>
+                                                </span>
+                                                <fieldset id="layer2">
+                                                    <label class="checkbox" for="visible2">
+                                                        <input id="visible2" class="visible" type="checkbox"
+                                                            legend="country" />&nbsp&nbsp Country
+                                                        Layer
+                                                    </label>
+                                                    <input class="opacity" type="range" min="0" max="1" step="0.01"
+                                                        value="1" />
+                                                </fieldset>
+                                                <fieldset id="layer3">
+                                                    <label class="checkbox" for="visible3">
+                                                        <input id="visible3" class="visible" type="checkbox"
+                                                            legend="province" />&nbsp&nbsp Province
+                                                        Layer
+                                                    </label>
+                                                    <input class="opacity" type="range" min="0" max="1" step="0.01"
+                                                        value="1" />
+                                                </fieldset>
+                                                <fieldset id="layer4">
+                                                    <label class="checkbox" for="visible4">
+                                                        <input id="visible4" class="visible" type="checkbox"
+                                                            legend="district" />&nbsp&nbsp District
+                                                        Layer
+                                                    </label>
+                                                    <input class="opacity" type="range" min="0" max="1" step="0.01"
+                                                        value="1" />
+                                                </fieldset>
+                                                <fieldset id="layer5">
+                                                    <label class="checkbox" for="visible5">
+                                                        <input id="visible5" class="visible" type="checkbox"
+                                                            legend="local" />&nbsp&nbsp Local
+                                                        Layer
+                                                    </label>
+                                                    <input class="opacity" type="range" min="0" max="1" step="0.01"
+                                                        value="1" />
+                                                </fieldset>
+                                            </li>
+                                            <li><span>
+                                                    <h6 class="theme">Population Layers</h6>
+                                                </span>
+                                                <fieldset id="layer6">
+                                                    <label class="checkbox" for="visible6">
+                                                        <input id="visible6" class="visible" type="checkbox"
+                                                            legend="male" />&nbsp&nbsp Male
+                                                        Population
+                                                        Layer
+                                                    </label>
+                                                    <input class="opacity" type="range" min="0" max="1" step="0.01"
+                                                        value="1" />
+                                                </fieldset>
+                                                <fieldset id="layer7">
+                                                    <label class="checkbox" for="visible7">
+                                                        <input id="visible7" class="visible" type="checkbox"
+                                                            legend="female" />&nbsp&nbsp Female Population
+                                                    </label>
+                                                    <input class="opacity" type="range" min="0" max="1" step="0.01"
+                                                        value="1" />
+                                                </fieldset>
+                                                <fieldset id="layer8">
+                                                    <label class="checkbox" for="visible8">
+                                                        <input id="visible8" class="visible" type="checkbox"
+                                                            legend="population" />&nbsp&nbsp Total
+                                                        Population
+                                                        Layer
+                                                    </label>
+                                                    <input class="opacity" type="range" min="0" max="1" step="0.01"
+                                                        value="1" />
+                                                </fieldset>
+                                            </li>
+                                            <li><span>
+                                                    <h6 class="theme">Raster Layers</h6>
+                                                </span>
+                                                <fieldset id="layer9">
+                                                    <label class="checkbox" for="visible9">
+                                                        <input id="visible9" class="visible" type="checkbox"
+                                                            legend="landcover" />&nbsp&nbsp Landcover
+                                                        Layer
+                                                    </label>
+                                                    <input class="opacity" type="range" min="0" max="1" step="0.01"
+                                                        value="1" />
+                                                </fieldset>
+                                                <fieldset id="layer10">
+                                                    <label class="checkbox" for="visible10">
+                                                        <input id="visible10" class="visible" type="checkbox"
+                                                            legend="dem" />&nbsp&nbsp SRTM DEM
+                                                        Layer
+                                                    </label>
+                                                    <input class="opacity" type="range" min="0" max="1" step="0.01"
+                                                        value="1" />
+                                                </fieldset>
+                                            </li>
+                                            <li><span>
+                                                    <h6 class="theme">Covid-19 Layer</h6>
+                                                </span>
+                                                <fieldset id="layer11">
+                                                    <label class="checkbox" for="visible11">
+                                                        <input id="visible11" class="visible" type="checkbox"
+                                                            legend="covid" />&nbsp&nbsp Covid-19
+                                                        Cases
+                                                        Layer
+                                                    </label>
+                                                    <input class="opacity" type="range" min="0" max="1" step="0.01"
+                                                        value="1" />
+                                                </fieldset>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </li>
+                            </ul>
+                            <br>
+                            <h4>Legend</h4>
+                            <div id="legendToDisplay">
+                                <img id="change" src="" alt="Select any one overlay">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offset-lg-00 col-lg-10">
+                    <div class="webmap" id="webmap"></div>
+                    <div id="scale-line" class="scale-line"></div>
+                    <div id="display-coordinate" class="display-coordinate"></div>
+                </div>
+            </div>
+            <br>
+            <div id="info"></div>
+        </div>
+    </section>
+
+    <!--=================== End of Web GIS App ========================-->
+
+
+    <!-- ================ start footer Area ================= -->
+    <footer class="footer-area">
+        <div class="container">
+
+            <div class="footer-bottom row align-items-center">
+                <p class="footer-text m-0 col-lg-8 col-md-12">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved |<a
+                        href="index.html"><img src="img/logo.png" alt="" /></a>
+                </p>
+                <div class="col-lg-4 col-md-12 footer-social">
+                    <a href="https://www.facebook.com/raj.bhattarai.77" target="_blank"><i class="ti-facebook"></i></a>
+                    <a href="https://www.instagram.com/iamrajbhattarai/" target="_blank"><i
+                            class="ti-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UC1_srh259JZqXAa3SNCri3g" target="_blank"><i
+                            class="ti-youtube"></i></a>
+                    <a href="https://twitter.com/rajbhattarai222" target="_blank"><i class="ti-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/raj-bhattarai-722a711b6/" target="_blank"><i
+                            class="ti-linkedin"></i></a>
+                    <a href="https://join.skype.com/invite/uO2ol0FD7aKa" target="_blank"><i class="ti-skype"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ================ End footer Area ================= -->
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/hexagons.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/webmap.js"></script>
+
+</body>
+
+</html>
